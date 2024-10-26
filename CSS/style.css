@@ -16,7 +16,7 @@ header ul li {
 header a {
   /* pour enlever le soulignement */
   text-decoration: none;
-  color: black;
+  color: #fff;
   display: block;
   padding: 18px 16px;
 }
@@ -27,8 +27,27 @@ header nav {
   background-color: #829ba2;
   display: flex;
   justify-content: space-between;
+  position: fixed;
 }
 /* Image de fond header */
 header {
-  background-image: url();
+  background: url(../Images/banniere2.jpg) no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 600px;
+  /* opacity: ; */
+}
+header h1 {
+  color: #fff;
+  font-size: 1.8em;
+  text-align: right;
+  margin-top: 170px;
+  margin-left: 200px;
+}
+header button {
+  margin: 25px;
+  padding: 10px;
+  align-self: flex-end;
+}
+header .titre_button {
 }
