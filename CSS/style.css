@@ -6,20 +6,43 @@
 /* HEADER */
 .header-image {
   background-image: url("../Images/banniere2.jpg");
-  /*   filter: brightness(0.9); pour assombrir un peu */
   background-size: cover;
   background-position: center;
   height: 500px;
+  position: relative;
+}
+.navbar {
+  position: relative;
+  border-bottom: 1px solid rgb(180 169 169 / 64%);
+  z-index: 2;
+}
+.header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 .header-image h1 {
+  /* mettre en position relative et un z-index:2 pour que la calque du text soit au dessus de celle de l'opacité */
   font-size: 3rem;
-  font-weight: bold;
+  top: 95px;
+  left: 170px;
   color: white;
-  margin: 0 auto;
+  position: relative;
+  line-height: normal;
+  z-index: 2;
 }
 .header-button {
   display: flex;
+  top: 95px;
+  left: 50px;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 .btn-outline-success {
   color: #58ff33;
@@ -34,20 +57,75 @@
   margin: 40px 0;
 }
 /* Section card */
-.row-cols-1 {
+section.variété {
   background: url(../Images/Carousel/carousel4.jpg) no-repeat;
   background-size: cover;
-} 
+  background-position: center;
+  position: relative;
+}
+.variété::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.variété h2 {
+  text-align: center;
+  top: 25px;
+  position: relative;
+  color: #fff;
+  z-index: 2;
+}
+.variété div#button {
+  position: relative;
+  padding: 10px;
+  z-index: 2;
+}
+.text-white {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.col-6 {
+  z-index: 2;
+}
+.row-cols-1 {
+  width: 75%;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  padding: 20px;
+}
 /* FOOTER */
 footer {
   background: url(../Images/banniere2.jpg);
-  filter: brightness(0.8); /*  pour assombrir un peu */
   background-size: cover;
   background-position: center;
-  height: 400px;
+  position: relative;
+  height: 85vh;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 footer p {
   font-weight: bold;
   font-size: 1.5em;
   letter-spacing: 1px;
+  position: relative;
+  padding: 15px;
+  z-index: 2;
+}
+footer form {
+  position: relative;
+  z-index: 2;
 }
