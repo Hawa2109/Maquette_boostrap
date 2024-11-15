@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Redressed&display=swap');
+header {
+    .menu-nav {
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: 'Merriweather', serif;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+
+            
+            .nav-link {
+                border-bottom: 1px solid transparent;
+                transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+                
+
+                &:hover {
+                    border-bottom-color: var(--bs-teal);
+                    padding-bottom: 20px;
+                }
+            }
+    }
+    .btn-commande {
+                color: var(--bs-teal);
+                border-color: var(--bs-teal);
+                transition: 0.5s;
+
+                &:hover, &:active {
+                    color: #fff;
+                    background-color: var(--bs-teal);
+
+                }
+            }
+    .banniere {
+         background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../Images/banniere2.jpg) center center no-repeat fixed;
+        background-size: cover;
+        height: 800px; 
+
+        .redressed{
+            font-family: 'Redressed', cursive;
+        }
+        .merriweather{
+            font-family: 'Merriweather', serif;
+        }
+
+        .titre-banniere {
+            font-size: 48px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+    }
+}
